@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compra a Cuotas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/verde_primario"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etValorProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor del producto"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etNumCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de cuotas"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tasa de interés mensual (%)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnCalcularCuotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvValorOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvValorCuota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>
