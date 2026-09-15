@@ -39,8 +39,8 @@ class DescuentosFragment : Fragment() {
             val precio = precioTexto.toDoubleOrNull()
             val porcentaje = porcentajeTexto.toDoubleOrNull()
 
-            if (precio == null || precio < 0) {
-                etPrecioOriginal.error = "Ingresa un precio válido (mayor o igual a 0)"
+            if (precio == null || precio <= 0) {
+                etPrecioOriginal.error = "El valor del producto debe ser mayor que 0"
                 return@setOnClickListener
             }
 

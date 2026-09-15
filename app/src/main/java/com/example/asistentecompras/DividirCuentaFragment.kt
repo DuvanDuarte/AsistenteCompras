@@ -36,8 +36,8 @@ class DividirCuentaFragment : Fragment() {
             val numPersonas = etNumPersonas.text.toString().trim().toIntOrNull()
             val porcentajePropina = etPorcentajePropina.text.toString().trim().toDoubleOrNull()
 
-            if (valorCuenta == null || valorCuenta < 0) {
-                etValorCuenta.error = "Ingresa un valor válido (mayor o igual a 0)"
+            if (valorCuenta == null || valorCuenta <= 0) {
+                etValorCuenta.error = "El valor del producto debe ser mayor que 0"
                 return@setOnClickListener
             }
 
